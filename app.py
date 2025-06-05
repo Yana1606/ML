@@ -134,6 +134,7 @@ elif page == "Описание данных":
 # Страница 3: Визуализации
 elif page == "Визуализации":
     st.title("Визуализация данных")
+    data_path = 'diabetes_good.csv'
     data = pd.read_csv(data_path)
     
     # 1. Распределение целевой переменной
