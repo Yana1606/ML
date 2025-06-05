@@ -78,7 +78,7 @@ if page == "Информация":
     col1, col2 = st.columns([1, 3])
     
     with col1:
-        image = Image.open('assets/Фото 30х40.jpg')  # Замените на ваше изображение
+        image = Image.open('assets/Фото 30х40.jpg')
         st.image(image, width=200)
     
     with col2:
@@ -120,7 +120,7 @@ elif page == "Описание данных":
     """)
     
     st.header("Пример данных")
-    data_path = os.path.join(os.path.dirname(__file__), 'data/diabetes_good.csv')
+    data_path = os.path.join(os.path.dirname(__file__), 'diabetes_good.csv')
     data = pd.read_csv(data_path)
     st.dataframe(data.head())
     
