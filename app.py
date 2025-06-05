@@ -120,7 +120,7 @@ elif page == "Описание данных":
     """)
     
     st.header("Пример данных")
-    data_path = os.path.join(os.path.dirname(__file__), 'diabetes_good.csv')
+    data_path = 'diabetes_good.csv'
     data = pd.read_csv(data_path)
     st.dataframe(data.head())
     
