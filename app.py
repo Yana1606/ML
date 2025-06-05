@@ -119,7 +119,8 @@ elif page == "Описание данных":
     """)
     
     st.header("Пример данных")
-    data = pd.read_csv('C:\\RGR_ML\\diabetes_good.csv')
+    data_path = os.path.join(os.path.dirname(__file__), 'data/diabetes_good.csv')
+    data = pd.read_csv(data_path)
     st.dataframe(data.head())
     
     st.header("Предобработка")
@@ -132,7 +133,7 @@ elif page == "Описание данных":
 # Страница 3: Визуализации
 elif page == "Визуализации":
     st.title("Визуализация данных")
-    data = pd.read_csv('C:\\RGR_ML\\diabetes_good.csv')
+    data = pd.read_csv(data_path)
     
     # 1. Распределение целевой переменной
     st.header("1. Распределение диабета")
