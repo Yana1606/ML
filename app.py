@@ -9,6 +9,7 @@ from PIL import Image
 from sklearn.metrics import confusion_matrix
 import xgboost as xgb
 from sklearn.preprocessing import StandardScaler
+import os
 
 # Конфигурация
 st.set_page_config(layout="wide", page_title="Анализ диабета")
